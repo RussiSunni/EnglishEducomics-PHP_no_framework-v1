@@ -1,9 +1,12 @@
 <?php
 include 'config.php';
 
+session_start();
+
 if (isset($_POST['submit'])) {
 
 	$name = $_POST['name']; 
+	
 	$surname = $_POST['surname'];
 	$password = $_POST['password'];
 
@@ -37,6 +40,14 @@ if (isset($_POST['submit'])) {
 		echo "I'm sorry, I cant find you anywhere in my book.";
   	}
   }
+  
+			
+		
+
+
+
+  
+  
 }
 
 mysqli_close($con);

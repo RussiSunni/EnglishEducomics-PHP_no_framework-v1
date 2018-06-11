@@ -1,6 +1,8 @@
 <?php
 include 'config.php';
 
+session_start();
+
 // REGISTER USER
 if (isset($_POST['submit'])) {
 
